@@ -107,7 +107,7 @@ easier to maintain. If you choose Yes, your project will be set up with TypeScri
 If you choose No, it will be a regular JavaScript-based Vue app.
 
 ##### 2. Add JSX Support?
-JSX is a syntax extension for JavaScript that allows you to write HTML-like code inside JavaScript.
+JSX stands for Javascript XML.JSX is a syntax extension for JavaScript that allows you to write HTML-like code inside JavaScript.
 It is often used in React but can be used in Vue too. If you choose No, Vue will not support JSX, and 
 you'll write templates in Vue’s standard syntax (HTML-like). If you choose Yes, you’ll be able to write 
 your Vue components using JSX instead of Vue's templating syntax.
