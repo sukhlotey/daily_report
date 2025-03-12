@@ -317,4 +317,10 @@ Key Incompatibilities Between Bootstrap 4 and 5 That Affect Frappe
 - v-else is optional but useful when you need a fallback
 - Use v-else-if for multiple conditions
 
+##### 6. Spinner demo.
+
+**Answer:** 
+
+![Screencastfrom2025-03-1301-56-43online-video-cutter com-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/6930342d-58c0-4c0c-9f86-793c7520f964)
+
 
