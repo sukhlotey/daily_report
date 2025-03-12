@@ -244,3 +244,77 @@ Vite is designed with the future of web development in mind, aligning with moder
 **Conclusion**
 
 Vite is an excellent choice for Vue.js projects because it addresses many of the pain points of traditional bundlers, such as slow builds and complex configurations. It enhances the development experience with its speed, simplicity, and modern features, making it a go-to tool for Vue developers.
+
+##### Date: March 13 2025
+
+##### 1. VueJs recommend Pinia state management why, is there any other available, can I develop app without using state management?
+
+**Answer:** 
+Vue.js recommends Pinia as the official state management solution because:
+
+**Simplicity** – Pinia is easier to set up and use compared to Vuex (the older state management library).
+**Performance** – It has better reactivity and avoids unnecessary re-renders.
+**TypeScript Support** – It works well with TypeScript, providing better type safety.
+**Modular Stores** – Allows splitting state into multiple stores, making it scalable.
+**DevTools Integration** – Works seamlessly with Vue DevTools.
+
+Other techniques:
+
+**Vuex** – The older state management library for Vue (now deprecated).
+**Zustand** – Lightweight and similar to Pinia, but mainly used in React.
+**RxJS** – If you're comfortable with reactive programming.
+**Vue Apollo** – If you're working with GraphQL, it has built-in state management.
+
+Without State management
+
+Vue Router
+
+##### 2. What are deps and optimizedeps?
+
+**Answer:** In the context of web development tools like Vite, "deps" refers to dependencies (libraries or modules) that your application relies on, while "optimizeDeps" controls how those dependencies are pre-bundled for faster and smoother performance. 
+
+**"deps" (dependencies):**
+These are external modules, packages, or libraries that your project needs to function correctly. Think of things like React, Vue, or any other npm package you use. 
+
+**"optimizeDeps" (dependency optimization):**
+This refers to a feature, particularly in tools like Vite, that pre-bundles or optimizes your dependencies to improve loading times and the overall user experience. It identifies dependencies and combines them into larger chunks for faster delivery. 
+Vite uses optimizeDeps to find all dependencies that are used in your code.
+These dependencies are pre-bundled and optimized, which means they are prepared in advance and cached, so the browser can load them much faster.
+The goal is to reduce the initial loading time of your application by ensuring that these frequently used components are already cached.
+This option allows you to control exactly which dependencies are pre-bundled. 
+
+[More information](https://vite.dev/config/dep-optimization-options)
+
+
+##### 3. Is bootstrap 5 backword compatible in frappe?
+**Answer:**
+
+No, Bootstrap 5 is not fully backward compatible with Bootstrap 4 or earlier versions, and this can affect Frappe, especially if an older version of Bootstrap was used in its UI components or themes.
+
+Key Incompatibilities Between Bootstrap 4 and 5 That Affect Frappe
+
+1️⃣ Dropped jQuery – Bootstrap 5 removes jQuery dependencies, while Bootstrap 4 relies on it.
+
+2️⃣ Changed Grid System – Bootstrap 5 uses a new grid system with xxl breakpoints and modifies .gutter spacing.
+
+3️⃣ Removed Utility Classes – Several older utility classes (.card-deck, .form-row, .input-group-append) are removed or replaced.
+
+4️⃣ Changed JavaScript Plugins – Bootstrap 5 uses pure JavaScript, and older tooltip or popover components might break.
+
+5️⃣ Modified Forms & Buttons – Form controls now have a new styling approach, affecting input groups and validation.
+
+6️⃣ Navbar Changes – .navbar-light and .navbar-dark styles have been updated, and .navbar-expand behavior is different.
+
+##### 4. Text muted class.
+
+**Answer:** The “text-muted” class can be applied to HTML elements to achieve a muted or desaturated text effect. By adding this class to an element, you can subtly tone down its visual prominence, conveying secondary or less important information.
+(So basically it dim the text)
+
+##### 5. v-if in vue
+
+**Answer:**  
+- v-if can be used alone
+- v-else is optional but useful when you need a fallback
+- Use v-else-if for multiple conditions
+
+
