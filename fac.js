@@ -1,10 +1,16 @@
-let number = parseInt(prompt("Any number:"));
-let fac = 1;
+const readline = require('readline');
 
-for (let i = 1; i <= number; i++){
- fac *= i;
-}
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 
-alert ("Factorial number of "+ number + "is " + fac)
-
-
+rl.question("Enter a number: ", function(number) {
+  number = parseInt(number);
+  let fact = 1;
+  for (let i = 1; i <= number; i++) {
+    fact *= i;
+  }
+  console.log(`Factorial of ${number} is ${fact}`);
+  rl.close();
+});
